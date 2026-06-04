@@ -1,0 +1,29 @@
+{
+  "notion_version": "2026-03-11",
+  "retention_snapshots": 14,
+  "export_all_shared": false,
+  "include": {
+    "page_ids": [],
+    "database_ids": [],
+    "data_source_ids": [],
+    "search_queries": []
+  },
+  "exclude_title_patterns": [
+    "access",
+    "credential",
+    "credentials",
+    "password",
+    "secret",
+    "secrets",
+    "token",
+    "доступ",
+    "ключ",
+    "парол",
+    "секрет",
+    "токен"
+  ],
+  "max_block_depth": 12,
+  "fetch_page_size": 100,
+  "request_delay_ms": 350,
+  "max_pages": 5000
+}
