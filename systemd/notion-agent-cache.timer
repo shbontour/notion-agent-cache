@@ -1,0 +1,10 @@
+[Unit]
+Description=Run local Notion agent cache refresh nightly
+
+[Timer]
+OnCalendar=*-*-* 02:40:00
+RandomizedDelaySec=20min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
