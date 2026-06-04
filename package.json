@@ -1,0 +1,44 @@
+{
+  "name": "notion-agent-cache",
+  "version": "0.1.0",
+  "description": "Local read-only Notion snapshots for coding agents and command-line search.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/shbontour/notion-agent-cache#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shbontour/notion-agent-cache.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shbontour/notion-agent-cache/issues"
+  },
+  "bin": {
+    "notion-agent-cache": "./bin/notion-agent-cache.mjs",
+    "notion-agent-cache-sync": "./bin/notion-agent-cache-sync.mjs",
+    "notion-agent-cache-search": "./bin/notion-agent-cache-search.mjs"
+  },
+  "files": [
+    "bin",
+    "systemd",
+    "config.example.json",
+    "README.md",
+    "README.ru.md",
+    "LICENSE",
+    "CONTRIBUTING.md",
+    "SECURITY.md"
+  ],
+  "scripts": {
+    "check": "node --check bin/notion-agent-cache.mjs && node --check bin/notion-agent-cache-sync.mjs && node --check bin/notion-agent-cache-search.mjs && node --test"
+  },
+  "keywords": [
+    "notion",
+    "codex",
+    "agents",
+    "markdown",
+    "cache",
+    "search"
+  ],
+  "engines": {
+    "node": ">=18.17"
+  }
+}
