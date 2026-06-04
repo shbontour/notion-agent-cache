@@ -1,0 +1,9 @@
+[Unit]
+Description=Refresh local Notion agent cache
+Documentation=https://github.com/shbontour/notion-agent-cache
+
+[Service]
+Type=oneshot
+Environment=NOTION_AGENT_CACHE_CONFIG=%h/.config/notion-agent-cache/config.json
+ExecStart=/usr/bin/env notion-agent-cache sync --config %h/.config/notion-agent-cache/config.json
+Nice=10
