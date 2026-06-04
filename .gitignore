@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+.cache/
+cache/
+snapshots/
+current
+
+coverage/
+*.log
